@@ -5,6 +5,8 @@ const app = express();
 
 // import database connection file
 const db = require('./config/database');
+// role table 
+const role = require('./model/role');
 
 
 

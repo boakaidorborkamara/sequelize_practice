@@ -1,16 +1,18 @@
-const Sequelize = require('sequelize');
-const sequelize = require('../database');
+const {Sequelize, DataTypes} = require('sequelize');
+const sequelize = require('../config/database');
 
 const Role = sequelize.define("Role", {
         id: {
-            type: sequelize.INTEGER,
+            type: DataTypes.INTEGER,
             autoincrement:true,
             primaryKey:true
         },
         name:{
-            type: sequelize.STRING
+            type: DataTypes.STRING
         }
     }
 );
+
+Role.sync();
 
 module.exports = Role;

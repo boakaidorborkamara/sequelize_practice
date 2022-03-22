@@ -15,5 +15,6 @@ async function testConnection(){
 }
 
 testConnection();
+// sequelize.close();
 
 module.exports = sequelize;
