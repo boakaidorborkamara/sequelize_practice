@@ -9,11 +9,8 @@ const db = require('./config/database');
 const role = require('./model/role');
 
 
-
-
 // define port 
 let port = 3306;
-
 
 
 // ROUTE 
